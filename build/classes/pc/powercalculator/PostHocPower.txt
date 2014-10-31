@@ -1,0 +1,20 @@
+Post hoc power 
+-------------- 
+
+Post hoc power calculations are generally discouraged.
+Power calculations are useful in planning a future study
+that has an adequate sample size; but power has no place
+in data analysis. 
+
+References:
+Hoenig, J.M. and Heisey, D.M. (2001), "The Abuse of Power:
+The Pervasive Fallacy of Power Calculations in Data
+Analysis," The American Statistician, 55, 19-24.
+
+Lenth, R.V. (2001), "Some Practical Considerations for
+Effective Sample Size Determination," The American
+Statistician, 55, 187-193.
+
+
+
+

@@ -1,0 +1,69 @@
+This dialog provides for power analysis of a one-
+sample test of proportions.  You have your choice of
+the normal approximation, the beta approximation
+(which is more accurate), or two exact calculations
+based on the binomial distribution.  In the latter
+cases, the size of the test (i.e., the probability of
+a type I error) is often much smaller than the stated
+significance level.
+
+MORE DETAILS
+Common notations: Suppose that X is a binomial random
+variable with "success" probability p and n
+independent trials, and let P = X/n.
+
+Normal approximation: 
+We approximate distribution of P with 
+N(mu=p, sigma^2=p*(1-p)/n). This has the same mean and
+variance as the true distribution of P. The critical
+region is obtained using this approximation with p=p0,
+then the power is computed using this approximation
+with p=p1.
+
+Beta approximation: 
+We approximate distribution of P with 
+Beta(a=(n-1)*p, b=(n-1)*(1-p)). This has the same mean
+and variance as the true distribution of P. The
+critical region is obtained using this approximation
+with p=p0, then the power is computed using this
+approximation with p=p1.
+
+Exact:
+In the exact test, the significance level alpha is
+taken as an upper bound on the size of the test (its
+power under the null hypothesis). Since X has a
+discrete distribution, the size cannot be controlled
+exactly and is often much lower than the specified
+alpha.
+
+For the alternative p < p0, let xl denote the largest
+x for which Pr(X <= x | p = p0) <= alpha.  
+Then the power is equal to Pr(X <= xl | p = p1) 
+and the size of the test is Pr(X <= xl | p = p0).
+
+For the alternative p > p0, let xu denote the smallest
+x for which Pr(X >= x | p = p0) <= alpha.
+Then the power is equal to Pr(X >= xu | p = p1).
+and the size of the test is Pr(X >= xu | p = p0).
+
+For the alternative p != p0, compute both powers as
+above but replace alpha by alpha/2; then sum the
+powers and sizes.
+
+Exact (Wald CV):
+This is like the exact method, except the critical
+values are calculated based on an adjusted Wald
+statistic.  This does NOT guarantee that the size
+of the test is less than alpha.
+Let
+  pAdj = (x + 2) / (n + 4),
+  z = (pAdj - p0) / sqrt{pAdj * (1 - pAdj) / (n + 4)}
+  zCrit = (1 - alpha) quantile of the N(0,1)
+    distribution (for a two-sided test, use the 
+    1 - alpha/2 quantile).
+Then xl is the largest x such that z <= -zCrit, and 
+xu = smallest x such that z >= zCrit.  Compute the
+power as in the exact method using these critical
+values.
+Note: This is the exact method used in the JMP
+statistical software.

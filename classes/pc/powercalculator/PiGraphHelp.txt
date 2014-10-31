@@ -1,0 +1,24 @@
+Power Calculator Graphical Dialog Help
+
+All of the numerical variables in the
+dialog are available for simple interactive
+graphing.  The user may select the "y" and "x" 
+variables from the drop-down menus and specify their
+range and increment.
+
+This will be a graph of the two variables, given
+the current values of the remaining variables.
+The graph is updated when there are actions in
+the dialog.  If the "Persistent" box is
+checked, new curves are added to the current
+graph; otherwise the curve is replaced.
+
+If the "Show Data" button is pressed, a text
+window appears that lists the data for each
+curve, plus information about the values of the
+other variables. These data may be pasted into
+another application if a publication-quality
+graph is needed.
+
+You may have as many graphs going as you like;
+of course this can affect performance.

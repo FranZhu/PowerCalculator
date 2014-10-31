@@ -1,0 +1,28 @@
+Help for Power Calculator Dialogs
+
+Overview
+-----------
+The PowerCalculator tool includes methods and interfaces 
+for computing statistical power or minimum sample-sizes 
+required to detect certain effect-sizes for a given power.
+
+Graphical-user-interface (GUI) components
+-----------------------------------------
+*** Sliders
+Parameter values may be changed by
+clicking and draging sliders or by entering numerical
+values in the corresponding text fields.
+
+Internally, slider inputs are automatically converted to 
+numerical values. You can toggle back and forth
+between slider mode and text-field mode. A value
+entered in the window is accepted when you click
+on "OK" or press the "Enter" key.
+
+Options menu
+------------
+The option menus vary depending on the 
+specific power calculation application. 
+Some power calculators provide "Graphics" options,
+which include client dialogs facilitating
+the specification of parameters.
